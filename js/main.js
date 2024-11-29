@@ -83,13 +83,13 @@ $(document).ready(function(){
                 e.preventDefault(); // prevent default form submit
 
                 $.ajax({
-                    url: 'mail.php', // form action url
+                    url: 'https://api.web3forms.com/submit', // form action url
                     type: 'POST', // form submit method get/post
                     dataType: 'html', // request type html/json/xml
                     data: form.serialize(), // serialize form data
                     beforeSend: function() {
                         alert.fadeOut();
-                        submit.html('Sending....'); // change submit button text
+                        submit.html('Thank you.'); // change submit button text
                     },
                     success: function(data) {
                         alert.html(data).fadeIn(); // fade in response data
