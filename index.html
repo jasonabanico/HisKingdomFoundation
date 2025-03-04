@@ -110,7 +110,7 @@
 	<section id="our-initiatives" class="text-center">
 		<div class="container">
 			<h2>Our Initiatives</h2>
-			<div class="row mt-4">
+			<div class="row mt-4 g-5">
 				<div class="col-md-6">
                     <div class="single-project">
                         <div class="content">
@@ -215,18 +215,19 @@
         <div class="container">
             <h2>Contact Us</h2>
             <p class="lead">We would love to hear from you. Reach out to us with any questions, comments, or ideas.</p>
-            <form class="mt-4">
+            <form class="booking-form" method="post" id="myForm" action="https://api.web3forms.com/submit">
+                <input type="hidden" name="access_key" value="4e1aaabc-b2cf-4f24-9f34-808b17f575e5"/>                
                 <div class="form-row justify-content-center">
                     <div class="col-md-6">
-                        <input type="text" class="form-control mb-3" placeholder="Your Name">
+                        <input name="name" type="text" class="form-control mb-3" placeholder="Your Name">
                     </div>
                     <div class="col-md-6">
-                        <input type="email" class="form-control mb-3" placeholder="Your Email">
+                        <input name="email" type="email" class="form-control mb-3" placeholder="Your Email">
                     </div>
                 </div>
                 <div class="form-row justify-content-center">
                     <div class="col-md-12">
-                        <textarea class="form-control mb-3" rows="5" placeholder="Your Message"></textarea>
+                        <textarea name="message" class="form-control mb-3" rows="5" placeholder="Your Message"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-outline-gold">Send Message</button>
